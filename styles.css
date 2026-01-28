@@ -3,6 +3,21 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.responsive-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1rem;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.item{
+    height:auto;
+    width: 100%;
+    padding:1em;
+    background-color: var(--primary-color);
+}
 .grid-container{
 display: grid;
 grid-template-areas: 

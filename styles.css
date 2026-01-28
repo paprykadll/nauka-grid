@@ -48,3 +48,14 @@ h1{
 .header{
     grid-area: header;
 }
+@media (max-width: 618px) {
+  .grid-container{
+    grid-template-areas: 
+      "header"
+      "left"
+      "right"
+      "footer";
+    grid-template-rows: 80px 160px 1fr 50px;
+    grid-template-columns: 1fr;
+}
+}
